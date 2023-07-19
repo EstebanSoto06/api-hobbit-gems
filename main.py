@@ -23,3 +23,12 @@ api.add_resource(InventarioResource, '/inventario',
 
 if __name__ == '__main__':
   app.run(debug=True)
+
+
+# Ruta de inicio (home)
+def home():
+  return "El mejor api de la historia por CHATGPT"
+
+
+if __name__ == '__main__':
+  app.run(host='0.0.0.0', port=50001)
